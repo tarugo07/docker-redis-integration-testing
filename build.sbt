@@ -10,6 +10,7 @@ lazy val root = (project in file(".")).
     name := "docker-redis-integration-testing",
     libraryDependencies ++= Seq(
       dockerTestkitScalatest % "test",
-      dockerTestkitImpl % "test"
+      dockerTestkitImpl % "test",
+      akkaTestkit % "test"
     )
   )
